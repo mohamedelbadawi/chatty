@@ -9,8 +9,8 @@
                 <div class="media-body ml-4">
                     <div class="d-flex align-items-center justify-content-between mb-1">
                         {{ $conversation->name ? $conversation->name : $conversation->users->pluck('name')->join(', ') }}
-                        </h6><small
-                            class="small font-weight-bold">{{ $conversation->Messages->last()->created_at->diffForHumans() }}</small>
+                        {{-- </h6><small --}}
+                            {{-- class="small font-weight-bold">{{ $conversation->Messages->last()->created_at->diffForHumans() }}</small> --}}
                     </div>
 
                     <p class="font-italic mb-0 text-small">

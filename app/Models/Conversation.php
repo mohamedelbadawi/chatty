@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Conversation extends Model
 {
     use HasFactory;
-    protected $fillable = ['last_message_at'];
+    protected $fillable = ['last_message_at','name','user_id','uuid'];
     public function getRouteKeyName()
     {
         return 'uuid';

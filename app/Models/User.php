@@ -48,7 +48,7 @@ class User extends Authenticatable
 
     public function hasRead(Conversation $conversation)
     {
-        dd($this->conversations->find($conversation->id));
+       return $this->conversations->find($conversation->id);
     }
 
 }
